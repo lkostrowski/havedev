@@ -1,0 +1,42 @@
+.header {
+  margin-top: 2rem;
+  position: sticky; }
+  .header__wrapper {
+    max-width: 100rem;
+    margin: 0 auto;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000; }
+  .header__links {
+    height: 5rem;
+    list-style: none outside;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .header__link {
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    position: relative;
+    padding: 0 1rem; }
+    .header__link:before, .header__link:after {
+      content: '';
+      height: 1.8rem;
+      width: 1px;
+      background-color: #000;
+      top: 50%;
+      position: absolute;
+      opacity: 0;
+      transition: 0.3s; }
+    .header__link:after {
+      right: 0;
+      transform: translateY(-50%) translateX(-1rem); }
+    .header__link:before {
+      left: 0;
+      transform: translateY(-50%) translateX(1rem); }
+    .header__link:hover:before, .header__link:hover:after {
+      opacity: 1;
+      transform: translateY(-50%); }
+    .header__link--active {
+      font-weight: 500; }

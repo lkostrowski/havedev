@@ -1,0 +1,13 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "jest/globals": true
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "jest"
+  ],
+  "rules": {
+    "react/forbid-prop-types": 1
+  }
+}

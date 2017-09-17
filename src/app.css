@@ -1,0 +1,13 @@
+@import url(~normalize-css/normalize.css);
+html {
+  font-size: 10px; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 14px; }
+
+a, a:hover, aactive {
+  color: inherit;
+  text-decoration: none; }
