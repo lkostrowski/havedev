@@ -1,7 +1,13 @@
 @import "~normalize-css/normalize.css";
+@import "./colors";
+
+* {
+    box-sizing: border-box;
+}
 
 html {
     font-size: 10px;
+    background: $white;
 }
 
 body {

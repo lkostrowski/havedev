@@ -1,6 +1,10 @@
 @import url(~normalize-css/normalize.css);
+* {
+  box-sizing: border-box; }
+
 html {
-  font-size: 10px; }
+  font-size: 10px;
+  background: #fff; }
 
 body {
   margin: 0;

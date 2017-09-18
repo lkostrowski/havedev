@@ -2,7 +2,9 @@
 
 .articles-list {
     @include resetList();
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1rem;
+
+    &__article {
+        width: 33.333%;
+        margin-bottom: 3rem;
+    }
 }
