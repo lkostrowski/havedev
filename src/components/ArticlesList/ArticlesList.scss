@@ -1,10 +1,41 @@
 @import "../../utilities/mixins";
+@import "../../utilities/colors";
 
 .articles-list {
     @include resetList();
 
     &__article {
-        width: 33.333%;
+        display: block;
+        padding-bottom: 2rem;
         margin-bottom: 3rem;
+        position: relative;
+
+        &:hover {
+            &:before {
+                box-shadow: 0 0 0 10px $white;
+                transform: translateY(-50%) rotate(30deg);
+            }
+        }
+
+        &:after {
+            display: block;
+            content: '';
+            border-bottom: 1px solid $darkGray;
+            max-width: 50rem;
+            margin: 0 auto;
+        }
+
+        &:before {
+            position: absolute;
+            height: 2rem;
+            width: 1px;
+            box-shadow: 0 0 0 4px $white;
+            background: $darkGray;
+            bottom: 0;
+            left: 50%;
+            content: '';
+            transform: translateY(-50%) rotate(-30deg);
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
     }
 }

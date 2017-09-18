@@ -3,5 +3,27 @@
   margin: 0;
   padding: 0; }
   .articles-list__article {
-    width: 33.333%;
-    margin-bottom: 3rem; }
+    display: block;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    position: relative; }
+    .articles-list__article:hover:before {
+      box-shadow: 0 0 0 10px #fff;
+      transform: translateY(-50%) rotate(30deg); }
+    .articles-list__article:after {
+      display: block;
+      content: '';
+      border-bottom: 1px solid #c0c0c0;
+      max-width: 50rem;
+      margin: 0 auto; }
+    .articles-list__article:before {
+      position: absolute;
+      height: 2rem;
+      width: 1px;
+      box-shadow: 0 0 0 4px #fff;
+      background: #c0c0c0;
+      bottom: 0;
+      left: 50%;
+      content: '';
+      transform: translateY(-50%) rotate(-30deg);
+      transition: box-shadow 0.3s, transform 0.3s; }

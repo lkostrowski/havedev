@@ -2,12 +2,14 @@ import React from 'react';
 import Header from '../../components/Header/Header';
 import ArticlesList from '../../components/ArticlesList/ArticlesList';
 import PageWrapper from '../../components/PageWrapper/PageWrapper';
-
-import getDummyArticles from '../../services/PostsProvider';
+import {connect} from 'react-redux';
+import {fetchArticles} from '../../actions/articles';
 
 class Blog extends React.Component {
-    constructor(props) {
-        super(props);
+
+    componentDidMount() {
+        // TODO: Move it to router middleware
+        fetchArticles(this.props.dispatch);
     }
 
     render() {
@@ -15,11 +17,17 @@ class Blog extends React.Component {
             <div>
                 <Header/>
                 <PageWrapper>
-                    <ArticlesList articles={getDummyArticles()}/>
+                    <ArticlesList articles={this.props.articles}/>
                 </PageWrapper>
             </div>
         )
     }
 }
 
-export default Blog;
+function mapStateToProps(state) {
+    return {
+        articles: state.articles.articles
+    }
+}
+
+export default connect(mapStateToProps)(Blog);
