@@ -1,6 +1,6 @@
 .header {
     margin-top: 2rem;
-    position: sticky;
+    position: relative;
 
     &__wrapper {
         max-width: 100rem;
@@ -8,6 +8,7 @@
         border-top: 1px solid #000;
         border-bottom: 1px solid #000;
         padding: 0 2rem;
+
     }
 
     &__links {

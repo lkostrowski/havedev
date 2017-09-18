@@ -1,4 +1,5 @@
 @import "../../utilities/colors";
+@import "../../utilities/mixins";
 
 .article {
     display: block;
@@ -6,25 +7,71 @@
 
     &__meta {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         height: 3rem;
-        border-bottom: 1px solid $midgray;
         margin-bottom: 2rem;
     }
 
     &__date {
         color: $darkGray;
-        font-size: 1.2rem;
+        flex: 0 0 10rem;
+        text-align: center;
     }
 
-    &__image {
-        display: block;
-        width: 100%;
+    &__separator {
+        height: 2rem;
+        width: 1px;
+        background-color: $darkGray;
+        margin: 0 2rem;
     }
 
     &__title {
         display: block;
-        font-size: 1.6rem;
+        font-size: 3rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__excerpt {
+        display: block;
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 0 auto 1rem;
+        max-width: 50rem;
+        color: $lightBlack;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    &__categories {
+        @include resetList();
+        text-align: right;
+        flex: 0 0 20rem;
+
+    }
+
+    &__category {
+        display: inline-block;
+        margin: 0 0.5rem;
+        color: $darkGray;
+    }
+
+    &__tags {
+        @include resetList();
+        text-align: left;
+        flex: 0 0 20rem;
+    }
+
+    &__tag {
+        display: inline-block;
+        margin: 0 0.5rem;
+        color: $darkGray;
+        &:before {
+            content: '#';
+        }
     }
 }

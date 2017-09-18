@@ -8,6 +8,7 @@ import {ConnectedRouter, routerReducer, routerMiddleware} from 'react-router-red
 import reducers from './reducers'
 import Homepage from './screens/Homepage/Homepage';
 import Blog from './screens/Blog/Blog';
+import ArticleView from "./screens/ArticleView/ArticleView";
 
 const history = createHistory();
 const middleware = routerMiddleware(history);
@@ -28,6 +29,7 @@ class App extends Component {
                     <div>
                         <Route exact path="/" component={Homepage}/>
                         <Route exact path="/blog" component={Blog}/>
+                        <Route exact path="/blog/:slug" component={ArticleView}/>
                     </div>
                 </ConnectedRouter>
             </Provider>

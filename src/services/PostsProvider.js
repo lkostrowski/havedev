@@ -1,56 +1,23 @@
 export default () => [
     {
         title: 'React state patterns',
-        image: {
-            src: 'http://lorempixel.com/400/320'
-        },
         published: '29.09.2016',
-        slug: 'react-state-patterns'
+        slug: 'react-state-patterns',
+        categories: [{name: 'webdev', id: 1}, {name: 'javascript', id: 2}],
+        tags: [{name: 'es6', id: 1}, {name: 'react', id: 2}],
+        excerpt: 'How to manage store in modern web apps and scale it right'
     },
     {
         title: 'Using mixes in BEM',
-        image: {
-            src: 'http://lorempixel.com/400/300'
-        },
         published: '19.04.2016',
-        slug: 'using-mixes-in-bem'
+        slug: 'using-mixes-in-bem',
+        categories: [{name: 'webdev', id: 1}, {name: 'javascript', id: 2}],
+        tags: [{name: 'mongo', id: 1}, {name: 'javascript', id: 2}],
     }, {
         title: 'React state patterns',
-        image: {
-            src: 'http://lorempixel.com/400/310'
-        },
+        categories: [{name: 'webdev', id: 1}, {name: 'javascript', id: 2}],
+        tags: [{name: 'c++', id: 1}, {name: 'java', id: 2}],
         published: '19.01.2016',
         slug: 'react-state-patterns'
-    },
-    {
-        title: 'Using mixes in BEM',
-        image: {
-            src: 'http://lorempixel.com/400/320'
-        },
-        published: '2.04.2016',
-        slug: 'using-mixes-in-bem'
-    },
-    {
-        title: 'Using mixes in BEM',
-        image: {
-            src: 'http://lorempixel.com/400/350'
-        },
-        published: '9.09.2016',
-        slug: 'using-mixes-in-bem'
-    }, {
-        title: 'React state patterns',
-        image: {
-            src: 'http://lorempixel.com/400/700'
-        },
-        published: '29.05.2016',
-        slug: 'react-state-patterns'
-    },
-    {
-        title: 'Using mixes in BEM',
-        image: {
-            src: 'http://lorempixel.com/400/300'
-        },
-        published: '29.09.2015',
-        slug: 'using-mixes-in-bem'
     },
 ];

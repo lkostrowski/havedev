@@ -1,0 +1,18 @@
+.article-content {
+  color: #3f3f3f; }
+  .article-content h1, .article-content h2, .article-content h3, .article-content h4, .article-content h5, .article-content h6 {
+    text-transform: uppercase;
+    font-weight: 600;
+    border-left-color: #3f3f3f; }
+  .article-content h1 {
+    border-left: 2rem solid;
+    padding-left: 1rem; }
+  .article-content h2 {
+    border-left: 1.5rem solid;
+    padding-left: 1rem; }
+  .article-content h3 {
+    border-left: 1.2rem solid;
+    padding-left: 1rem; }
+  .article-content h4 {
+    border-left: 1rem solid;
+    padding-left: 1rem; }

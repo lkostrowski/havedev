@@ -1,0 +1,31 @@
+@import "../../utilities/colors";
+
+.article-content {
+    color: $midBlack;
+
+    h1, h2, h3, h4, h5, h6 {
+        text-transform: uppercase;
+        font-weight: 600;
+
+        border-left-color: $midBlack;
+    }
+
+    h1 {
+        border-left: 2rem solid;
+        padding-left: 1rem;
+    }
+
+    h2 {
+        border-left: 1.5rem solid;
+        padding-left: 1rem;
+    }
+
+    h3 {
+        border-left: 1.2rem solid;
+        padding-left: 1rem;
+    }
+    h4 {
+        border-left: 1rem solid;
+        padding-left: 1rem;
+    }
+}

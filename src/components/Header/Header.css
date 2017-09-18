@@ -1,6 +1,6 @@
 .header {
   margin-top: 2rem;
-  position: sticky; }
+  position: relative; }
   .header__wrapper {
     max-width: 100rem;
     margin: 0 auto;

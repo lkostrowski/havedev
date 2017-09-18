@@ -3,17 +3,55 @@
   padding: 1rem; }
   .article__meta {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     height: 3rem;
-    border-bottom: 1px solid #e0e0e0;
     margin-bottom: 2rem; }
   .article__date {
     color: #c0c0c0;
-    font-size: 1.2rem; }
-  .article__image {
-    display: block;
-    width: 100%; }
+    flex: 0 0 10rem;
+    text-align: center; }
+  .article__separator {
+    height: 2rem;
+    width: 1px;
+    background-color: #c0c0c0;
+    margin: 0 2rem; }
   .article__title {
     display: block;
-    font-size: 1.6rem; }
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .article__excerpt {
+    display: block;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto 1rem;
+    max-width: 50rem;
+    color: #7e7e7e;
+    font-style: italic;
+    font-weight: 300; }
+  .article__categories {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    flex: 0 0 20rem; }
+  .article__category {
+    display: inline-block;
+    margin: 0 0.5rem;
+    color: #c0c0c0; }
+  .article__tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    flex: 0 0 20rem; }
+  .article__tag {
+    display: inline-block;
+    margin: 0 0.5rem;
+    color: #c0c0c0; }
+    .article__tag:before {
+      content: '#'; }
