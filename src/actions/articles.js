@@ -6,14 +6,14 @@ const actionTypes = {
     FETCH_ARTICLES_FAIL: 'FETCH_ARTICLES_FAIL'
 };
 
-const articlesEndpoint = '/blog-articles.json';
+const devApi = 'http://localhost:8000/blog/articles';
 
 const fetchArticles = async (dispatch) => {
     dispatch({
         type: actionTypes.FETCH_ARTICLES_START
     });
 
-    fetch(articlesEndpoint)
+    fetch(devApi)
         .then(async res => {
             const articles = await res.json();
 

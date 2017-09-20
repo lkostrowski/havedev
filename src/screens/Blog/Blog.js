@@ -17,7 +17,7 @@ class Blog extends React.Component {
             <div>
                 <Header/>
                 <PageWrapper>
-                    <ArticlesList articles={this.props.articles}/>
+                    <ArticlesList articles={this.props.articles} />
                 </PageWrapper>
             </div>
         )
